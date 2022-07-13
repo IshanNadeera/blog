@@ -1,5 +1,5 @@
 <?php include 'Partials/header.php'?>
 
-<h1>BlogPost</h1>
+<h2>Register</h2>
 
 <?php include 'Partials/footer.php'?>
