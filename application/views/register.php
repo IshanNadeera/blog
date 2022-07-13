@@ -3,6 +3,11 @@
 <div class="container">
     <h2>Register</h2>
 
+    <?php if ($this->session->flashdata('msg')){
+        echo "<h3>".$this->session->flashdata('msg')."</h3>";
+    }
+    ?>
+
     <hr>
 
     <?php echo validation_errors(); ?>

@@ -15,8 +15,14 @@ class Register extends CI_Controller {
                 }
                 else
                 {
-                        echo "Form Validation Success";
-                        die();
+                        $this->load->model('User_Model');
+                        $response = $this->User_Model->insertUserData();
+
+                        if($response){
+
+                            $this->session->set_flashdata('msg','Registerd Successfully! Please Login');
+                            redirect('Home/Register');
+                        }
                 }
     }
 
