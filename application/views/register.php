@@ -4,7 +4,7 @@
     <h2>Register</h2>
 
     <hr>
-    <form>
+    <form action="" method="post">
         <div class="form-group">
             <label for="exampleInputFirstName1">First name</label>
             <input type="text" class="form-control" id="exampleInputFirstName1" placeholder="First name">
